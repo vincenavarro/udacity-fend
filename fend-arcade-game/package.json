@@ -1,0 +1,49 @@
+{
+  "name": "fend-arcade-game",
+  "version": "1.0.0",
+  "description": "Udacity Project 3",
+  "main": "app.js",
+  "dependencies": {
+    "hoek": "^5.0.3"
+  },
+  "devDependencies": {
+    "ajv-keywords": "^3.2.0",
+    "browser-sync": "^2.24.6",
+    "del": "^3.0.0",
+    "eslint": "^5.2.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^5.0.0",
+    "gulp-fluent-ffmpeg": "^1.0.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.0.1",
+    "imagemin-giflossy": "^5.1.10",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-pngquant": "^6.0.0",
+    "imagemin-zopfli": "^5.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/vincenavarro/fend-arcade-game.git"
+  },
+  "keywords": [
+    "game",
+    "udacity",
+    "javascript",
+    "html",
+    "canvas"
+  ],
+  "author": "Vince Navarro",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://gitlab.com/vincenavarro/fend-arcade-game/issues"
+  },
+  "homepage": "https://gitlab.com/vincenavarro/fend-arcade-game#README"
+}

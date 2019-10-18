@@ -1,0 +1,177 @@
+# git config --global core.excludesfile ~/.gitignore_global
+# many sources https://github.com/github/gitignore/tree/master/Global
+
+# Apple
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# DW Dreamweaver
+_notes
+_compareTemp
+configs/
+dwsync.xml
+dw_php_codehinting.config
+*.mno
+
+# Dropbox
+.dropbox
+.dropbox.attr
+.dropbox.cache
+
+# Microsoft Office
+*.tmp
+~$*.doc*
+~$*.xls*
+*.xlk
+~$*.ppt*
+*.~vsd*
+
+# Visual Studio Code
+.vscode
+vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Visual Studio
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
+enc_temp_folder/
+*.psess
+*.vsp
+*.vspx
+
+# Sublime (Heathens...)
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+sftp-config.json
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+GitHub.sublime-settings
+
+# VIM
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+*~
+tags
+
+# Godot
+platform/windows/godot_res.res
+*.gen.*
+doc/_build/
+*.bc
+platform/android/java/build.gradle
+platform/android/java/.gradle
+platform/android/java/.gradletasknamecache
+platform/android/java/local.properties
+platform/android/java/project.properties
+platform/android/java/build.gradle
+platform/android/java/AndroidManifest.xml
+platform/android/java/libs/*
+platform/android/java/assets
+*.lib
+*.o
+*.ox
+*.a
+*.ax
+*.d
+*.so
+*.os
+*.Plo
+*.lo
+.deps/*
+.dirstamp
+gmon.out
+*.config
+*.creator
+*.files
+*.includes
+.cproject
+.settings/
+.geany
+.geanyprj
+logs/
+
+# Build Results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+x86/
+x64/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+*.debug
+*.dSYM
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Installshield
+[Ee]xpress/
+
+
+# Misc Applications
+*.bak
+**/node_modules
+**/.sass-cache
+.fscache
+**/.idea/
+**/dev

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Dungeon Match</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Dungeon Match">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="modal-container hidden">
+        <div class="modal-content">
+            <p class="victory-text">Against all odds you were able to defeat [cardsMatched] foes in only [moveCount] deft strikes! The humble villagers have gathered to humbly promote you to the rank of [starCount] star general. In honor of your victory the common folk now observe a moment of silence for [minutes][seconds] each day.</p><button class="play-again">Play Again?</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <img class="game-logo" srcset="img/logo/140.png 140w, img/logo/280.png 280w, img/logo/560.png 560w, img/logo/1120.png 1120w, img/logo/2240.png 2240w" src="img/logo/2240.png" sizes="95vw" alt="DungeonMatch84 Logo with Retro Styling">
+        </div>
+        <div class="score-panel">
+            <div>[Rank: <span class="stars"></span>]</div>
+            <div>[Moves: <span class="moves">0</span>]</div>
+            <div>[Time: <span class="time">0m 0s</span>]</div>
+            <div>[<img class="repeat" srcset="img/repeat/16.png 16w, img/repeat/32.png 32w, img/repeat/64.png 64w, img/repeat/128.png 128w" sizes="100vw" alt="Repeat Button">]</div>
+        </div>
+        <div class="deck">
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

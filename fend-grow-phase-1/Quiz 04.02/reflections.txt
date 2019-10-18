@@ -1,0 +1,12 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+* I have been using HTML for some time, however I did learn about the new standards DOCTYPE and charset standards. When I started we didn't have such things :)
+* Most of the syntax was only a refresher for me.
+* Definitely keeping an eye out for detail. I am used to rebuilding pieces for print production (which is what I do) but I've not really done it for web.
+* I've kept a much better eye on detail going forward!

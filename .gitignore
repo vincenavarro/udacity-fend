@@ -1,0 +1,43 @@
+# generic
+
+._*
+.[Tt]rash-*
+.Apple
+.Apple*
+.BridgeSort
+.cache
+.com.apple.*
+.DocumentRevisions-*
+.DS_Store
+.env
+.localized
+.netlify
+.nfs*
+.sass-cache
+.Spotlight-*
+.TemporaryItems
+.Trash*
+.VolumeIcon.icns
+.vscode
+[Dd]esktop.ini
+[Tt]humbs.db
+*.bak
+*.cab
+*.debug
+*.fscache
+*.idea
+*.lnk
+*.log
+*.msi
+*.msm
+*.msp
+*.next
+*.psd
+*~
+/build
+/logs
+/public
+$RECYCLE.BIN/
+Network Trash Folder
+node_modules
+Temporary Items

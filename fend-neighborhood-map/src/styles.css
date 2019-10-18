@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+*:focus {
+	border: 3px red solid;
+	background-color: #111	;
+}
+
+body {
+	background-color: #000
+}
+
+#app {
+	display: grid;
+	grid-gap: 0em;
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+	color: #444;
+}
+
+@media only screen and (max-width: 500px) {
+	#app {
+		grid-template-columns: auto;
+		grid-template-rows: 65px 40% auto 50px;
+		grid-template-areas:
+			'header'
+			'content'
+			'menu'
+			'footer';
+	}
+}
+
+@media only screen and (min-width: 501px) {
+	#app {
+		grid-template-columns: minmax(200px, 20%) auto;
+		grid-template-rows: 65px auto 30px;
+		grid-template-areas:
+			'header  header  '
+			'menu  content '
+			'footer  footer  ';
+	}
+}
+
+#header {
+	grid-area: header;
+	background-color: #000;
+	padding: 10px;
+	background-image: url('https://i.postimg.cc/tCjxX34S/123.jpg');
+	background-size: cover;
+	background-position: center;
+	border-bottom: #fff 2px solid;
+
+}
+
+#header h1 {
+	color: #fff;
+	font-size: 24pt;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 2px 1px 2px #000
+}
+
+#menu {
+	grid-area: menu;
+	color: #ddd;
+	background-color: #444;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#menu .location {
+	border: 1px solid #ddd;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 10px;
+}
+
+#menu h1 {
+	text-align: center
+}
+
+#menu .location {
+	cursor: pointer
+}
+
+#menu .location h2 {
+	font-size: 12pt;
+}
+
+#menu .location a,
+#menu .location a:visited,
+#menu .location a:hover {
+	text-decoration: none;
+}
+
+#menu .location address {
+	font-size: 11pt;
+}
+
+#menu .search {
+	width: 100%;
+	border: #fff 1px solid;
+	background-color: #444;
+	color: #fff;
+	padding: 1px
+}
+
+#menu .search:focus {
+	background-color: #000;
+}
+
+#menu figure,
+#menu address {
+	margin: 5px 0px 5px 0px;
+}
+
+#menu figcaption {
+	font-size: small;
+}
+
+#map {
+	grid-area: content;
+	border-left: #fff 2px solid;
+}
+
+#footer {
+	grid-area: footer;
+	background-color: #000;
+	padding: 8px 20px 8px 20px;
+}
+
+#footer .notice {
+	font-size: small;
+	color: #444;
+	text-align: center;
+}

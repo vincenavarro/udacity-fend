@@ -1,0 +1,533 @@
+@media screen and (max-width: 380px) {
+  .score-panel {
+    font-size: 1.55em;
+  }
+  .victory-text {
+    font-size: 1.1em;
+    line-height: 0.99em;
+  }
+  .stars img,
+  .repeat {
+    width: 15px;
+    height: 15px;
+  }
+  .modal-container {
+    background: rgba(46, 61, 73, 0.7) url("../img/scroll/450.png") no-repeat;
+    background-size: 150vw;
+  }
+  .modal-content {
+    width: 60%;
+  }
+  .play-again {
+    font-size: 1em;
+  }
+  body {
+    background: #422835 url("../img/ground/400.png");
+  }
+}
+
+@media screen and (min-width: 381px) and (max-width: 599px) {
+  .score-panel {
+    font-size: 1.86em;
+  }
+  .victory-text {
+    font-size: 1.43em;
+    line-height: 1.001em;
+  }
+  .stars img,
+  .repeat {
+    width: 18px;
+    height: 18px;
+  }
+  .modal-container {
+    background: rgba(46, 61, 73, 0.7) url("../img/scroll/900.png") no-repeat;
+    background-size: 130vw;
+  }
+  .modal-content {
+    width: 61.53846%;
+  }
+  .play-again {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 381px) and (max-width: 799px) {
+  body {
+    background: #422835 url("../img/ground/800.png");
+  }
+}
+
+@media screen and (min-width: 475px) and (max-width: 599px) {
+  .victory-text {
+    font-size: 1.716em;
+    line-height: 1.144em;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .score-panel {
+    font-size: 2.015em;
+  }
+  .victory-text {
+    font-size: 1.54em;
+    line-height: 1.848em;
+  }
+  .stars img,
+  .repeat {
+    width: 19.5px;
+    height: 19.5px;
+  }
+  .modal-container {
+    background: rgba(46, 61, 73, 0.7) url("../img/scroll/1800.png") no-repeat;
+    background-size: 107.14286vw;
+  }
+  .modal-content {
+    width: 53.84615%;
+  }
+  .play-again {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .score-panel {
+    font-size: 2.48em;
+  }
+  .victory-text {
+    font-size: 1.76em;
+    line-height: 1.76em;
+  }
+  .stars img,
+  .repeat {
+    width: 24px;
+    height: 24px;
+  }
+  .modal-container {
+    background: rgba(46, 61, 73, 0.7) url("../img/scroll/900.png") no-repeat;
+    background-size: 93.75vw;
+  }
+  .modal-content {
+    width: 46.15385%;
+  }
+  .play-again {
+    font-size: 1.3em;
+  }
+  body {
+    background: #422835 url("../img/ground/1600.png");
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  body {
+    background: #422835 url("../img/ground/3200.png");
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: 'VT323', monospace;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-size: 80vmax;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.wait,
+body.wait * {
+  cursor: wait !important;
+}
+
+.container {
+  width: 95%;
+  min-width: 300px;
+  max-width: 750px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+.deck {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 21%;
+  background: url("../img/crate/144.png") no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card.open {
+  background: none;
+  cursor: default;
+}
+
+.mobCard {
+  height: 85%;
+  width: 85%;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+.score-panel {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #FFF;
+}
+
+.score-panel span {
+  margin-right: 5px;
+}
+
+.score-panel div {
+  display: inline-block;
+}
+
+.star,
+.repeat {
+  vertical-align: baseline;
+}
+
+.repeat {
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+.game-logo {
+  margin-top: 15px;
+  width: 95%;
+  max-width: 550px;
+}
+
+.star {
+  width: 25px;
+  height: 25px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.modal-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  background-attachment: fixed;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.modal-content {
+  margin: 20% auto;
+  padding: 20%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-content p::first-letter {
+  font-size: 200%;
+  float: left;
+}
+
+.victory-text {
+  text-align: left;
+}
+
+.play-again {
+  font-family: 'VT323', monospace;
+  width: 75%;
+  height: 10%;
+  min-width: 40px;
+  min-height: 40px;
+  margin: 4px;
+  border: 5px solid #824900;
+  cursor: pointer;
+}
+
+.play-again:hover {
+  transform: translate(-6px, -6px);
+  -webkit-transform: translate(-6px, -6px);
+  -ms-transform: translate(-6px, -6px);
+  -webkit-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.6.0
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2018 Daniel Eden
+ */
+.animated {
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+@-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}

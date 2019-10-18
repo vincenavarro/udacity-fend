@@ -1,0 +1,288 @@
+// Site Wide Settings.
+$udacity-blue: #02b3e4;
+$dark-grey: #2d3c49;
+$light-grey: #7d97ad;
+$h1-base-size: 30px;
+$h2-base-size: 12px;
+$h3-base-size: 16px;
+$h4-base-size: 18px;
+$p-base-size: 10px;
+
+// Breakpoints.
+$break-400: 1.25;
+$break-500: 1.5;
+$break-650: 1.7;
+$break-650-articles: 1.1;
+$break-800: 2;
+$break-800-articles: 1.3;
+
+// General Reset.
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	line-height: 1;
+	font-family: "Open Sans", sans-serif;
+}
+
+// Structure.
+body {
+	max-width: 1200px;
+	padding: 0px 10px 0px 10px;
+	margin: 5px auto 5px auto;
+}
+
+.header-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+header,
+article {
+	margin-bottom: 10px;
+}
+
+section {
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 649px) {
+	.work-preview {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.featured-work {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 10px;
+	}
+	.section-image {
+		width: 30%;
+		padding-right: 5%;
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.work-preview {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+	}
+	.featured-work {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		min-height: 48px;
+		margin-top: 10px;
+		width: 100%;
+	}
+	.section-image {
+		width: 80%;
+		min-width: 48px;
+		text-align: center;
+		padding-bottom: 5%;
+	}
+	.work-header {
+		padding-left: 3.1%;
+	}
+}
+
+// Individual Items.
+.logo {
+	width: 20%;
+	height: 20%;
+	max-height: 140px;
+	max-width: 140px;
+}
+
+.name {
+	height: 20%;
+}
+
+.splash {
+	width: 100%;
+}
+
+// Typefaces.
+
+h1 {
+	font-weight: 300;
+	color: $dark-grey;
+	text-transform: uppercase;
+	line-height: 1.4em;
+	text-align: right;
+}
+
+h2 {
+	font-weight: 300;
+	color: $dark-grey;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+h3 {
+	font-weight: 400;
+	color: $light-grey;
+	text-transform: capitalize;
+	text-align: left;
+}
+
+h4 {
+	font-weight: 400;
+	color: $dark-grey;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+p {
+	font-weight: 400;
+	line-height: 2.2em;
+	color: $dark-grey;
+	text-align: left;
+}
+
+@media screen and (max-width: 399px) {
+	h1 {
+		font-size: $h1-base-size;
+	}
+	h2 {
+		font-size: $h2-base-size;
+	}
+	h3 {
+		font-size: $h3-base-size;
+	}
+	h4 {
+		font-size: $h4-base-size;
+	}
+	p {
+		font-size: $p-base-size;
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 499px) {
+	h1 {
+		font-size: $h1-base-size * $break-400;
+	}
+	h2 {
+		font-size: $h2-base-size * $break-400;
+	}
+	h3 {
+		font-size: $h3-base-size * $break-400;
+	}
+	h4 {
+		font-size: $h4-base-size * $break-400;
+	}
+	p {
+		font-size: $p-base-size * $break-400;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 649px) {
+	h1 {
+		font-size: $h1-base-size * $break-500;
+	}
+	h2 {
+		font-size: $h2-base-size * $break-500;
+	}
+	h3 {
+		font-size: $h3-base-size * $break-500;
+	}
+	h4 {
+		font-size: $h4-base-size * $break-500;
+	}
+	p {
+		font-size: $p-base-size * $break-500;
+	}
+}
+
+@media screen and (min-width: 650px) and (max-width: 799px) {
+	h1 {
+		font-size: $h1-base-size * $break-650;
+	}
+	h2 {
+		font-size: $h2-base-size * $break-650;
+	}
+	h3 {
+		font-size: $h3-base-size * $break-650;
+	}
+	h4 {
+		font-size: $h4-base-size * $break-650;
+		text-align: center;
+	}
+	p {
+		font-size: $p-base-size * $break-650-articles;
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	h1 {
+		font-size: $h1-base-size * $break-800;
+	}
+	h2 {
+		font-size: $h2-base-size * $break-800;
+	}
+	h3 {
+		font-size: $h3-base-size * $break-800;
+	}
+	h4 {
+		font-size: $h4-base-size * $break-800;
+		text-align: center;
+	}
+	p {
+		font-size: $p-base-size * $break-800-articles;
+		text-align: center;
+	}
+}
+
+// For accessibility and to pass section HTML without warnings.
+h5 {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+// Base Tags.
+
+a {
+	text-transform: inherit;
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+hr {
+	background: $light-grey;
+	height: 2px;
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+// Fun.
+
+.konami {
+	animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
